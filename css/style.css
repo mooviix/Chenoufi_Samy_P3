@@ -1,0 +1,80 @@
+:root {
+  --colorPrimary: #9356DC;
+  --colorSecondary: #ff79da;
+  --colorTertiaire: #99e2d0;
+  --colorGrey: #EAEAEA;
+  --colorSilver: #F6F6F6;
+}
+
+h1 {
+  font-family: "roboto";
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h3 {
+  font-family: "roboto";
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+body {
+  margin: 0px;
+}
+
+/* Logo et header */
+header {
+  height: 63px;
+  text-align: center;
+}
+header > img {
+  width: 50%;
+  margin-top: 20px;
+}
+
+/* texte et btn */
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--colorGrey);
+}
+.localisation > i {
+  margin-right: 10px;
+}
+
+.texteBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorSilver);
+  height: 290px;
+}
+.texteBtn > .texte {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.texteBtn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(var(--colorSecondary), var(--colorPrimary));
+  border-radius: 35px;
+  width: 60%;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

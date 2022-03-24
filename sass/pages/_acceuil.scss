@@ -1,0 +1,57 @@
+/* Logo et header */ 
+
+
+header{
+    height: 63px;
+    text-align: center;
+    > img {
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+
+/* texte et btn */ 
+
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--colorGrey);
+
+    > i {
+        margin-right: 10px;
+    }
+}
+
+.texteBtn{
+    display: flex;
+    flex-direction: column;
+    @include center;
+    background-color: var(--colorSilver);
+    height: 290px;
+
+    > .texte{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(var(--colorSecondary),var(--colorPrimary));
+        border-radius: 35px;
+        width: 60%;
+        height: 50px;
+        color: white;
+        font-size: 15px;
+        border: none;
+    }
+}
+
+
+

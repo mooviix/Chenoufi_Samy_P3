@@ -1,0 +1,13 @@
+:root{
+    --colorPrimary: #9356DC;
+    --colorSecondary: #ff79da;
+    --colorTertiaire: #99e2d0;
+    --colorGrey: #EAEAEA;
+    --colorSilver: #F6F6F6;
+    
+}
+
+@mixin center {
+    align-items: center;
+    justify-content: center;
+}
