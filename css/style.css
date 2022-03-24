@@ -23,6 +23,12 @@ h3 {
   margin-bottom: 0px;
 }
 
+h4 {
+  font-family: "roboto";
+  font-weight: 300;
+  margin: 0px;
+}
+
 body {
   margin: 0px;
 }
@@ -118,6 +124,42 @@ nav > .choixCase > div {
   border-radius: 50%;
   height: 26px;
   width: 8%;
+}
+nav > .choixCase:nth-child(3) > i {
+  color: var(--colorPrimary);
+}
+
+/* restaurant */
+.case {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 255px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px var(--colorGrey);
+}
+.case > .case_img {
+  overflow: hidden;
+  width: 100%;
+}
+.case > .case_img > img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.case > .textCoeur {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+.case > .textCoeur > .coeur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
