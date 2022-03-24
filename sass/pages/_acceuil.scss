@@ -14,8 +14,7 @@ header{
 
 .localisation{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;;
     height: 50px;
     background-color: var(--colorGrey);
 
@@ -40,8 +39,7 @@ header{
 
     button{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         text-align: center;
         background: linear-gradient(var(--colorSecondary),var(--colorPrimary));
         border-radius: 35px;
@@ -53,5 +51,48 @@ header{
     }
 }
 
+.choix{
+    margin-left: 15px;
+    margin-top: 54px;
+    font-size: 24px;
+}
 
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
 
+    > .choixCase{
+        display: flex;
+        @include center;
+        width: 90%;
+        height: 77px;
+        background-color: var(--colorSilver);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        box-shadow: 2px 2px 2px var(--colorGrey);
+
+        > i{
+            padding-right: 20px;
+            font-size: 20px;
+            color: grey;
+        }
+
+        > div{
+            display: flex;
+            @include center;
+            position: absolute;
+            left: -10px;
+            background-color: var(--colorPrimary);
+            color: white;
+            border-radius: 50%;
+            height: 26px;
+            width: 8%;
+        }
+    }
+
+    
+}
