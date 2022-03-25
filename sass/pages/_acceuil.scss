@@ -102,6 +102,11 @@ nav {
 
 /* restaurant */
 
+.restaurant{
+  background-color: var(--colorSilver);
+  height: 1250px;
+}
+
 .case {
   display: flex;
   flex-direction: column;
@@ -110,10 +115,21 @@ nav {
   margin: auto;
   border-radius: 20px;
   box-shadow: 2px 2px 2px var(--colorGrey);
+  margin-bottom: 20px;
 
   > .case_img {
+    position: relative;
     overflow: hidden;
-    width: 100%;
+
+    > .nouveau{
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      background-color: #99E2D0;
+      padding: 5px 10px;
+      color: #17A17F;
+      border-radius: 5px;
+    }
 
     > img {
       object-fit: cover;
@@ -133,6 +149,17 @@ nav {
       display: flex;
       @include center;
       font-size: 28px;
+
+    }
+
+    > .text{
+      padding-bottom: 10px;
     }
   }
+}
+
+.titre{
+  margin-bottom: 25px;
+  margin-left: 20px;
+  padding-top: 50px;
 }

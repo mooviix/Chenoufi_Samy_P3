@@ -25,7 +25,12 @@ h3 {
 
 h4 {
   font-family: "roboto";
-  font-weight: 300;
+  font-weight: 400;
+  margin: 0px;
+}
+
+p {
+  font-family: "roboto";
   margin: 0px;
 }
 
@@ -130,6 +135,11 @@ nav > .choixCase:nth-child(3) > i {
 }
 
 /* restaurant */
+.restaurant {
+  background-color: var(--colorSilver);
+  height: 1250px;
+}
+
 .case {
   display: flex;
   flex-direction: column;
@@ -138,10 +148,20 @@ nav > .choixCase:nth-child(3) > i {
   margin: auto;
   border-radius: 20px;
   box-shadow: 2px 2px 2px var(--colorGrey);
+  margin-bottom: 20px;
 }
 .case > .case_img {
+  position: relative;
   overflow: hidden;
-  width: 100%;
+}
+.case > .case_img > .nouveau {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  background-color: #99E2D0;
+  padding: 5px 10px;
+  color: #17A17F;
+  border-radius: 5px;
 }
 .case > .case_img > img {
   object-fit: cover;
@@ -160,6 +180,15 @@ nav > .choixCase:nth-child(3) > i {
   align-items: center;
   justify-content: center;
   font-size: 28px;
+}
+.case > .textCoeur > .text {
+  padding-bottom: 10px;
+}
+
+.titre {
+  margin-bottom: 25px;
+  margin-left: 20px;
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
