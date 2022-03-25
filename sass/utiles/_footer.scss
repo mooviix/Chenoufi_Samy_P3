@@ -1,0 +1,41 @@
+footer{
+    background-color: rgb(34, 34, 34);
+    height: 200px;
+    padding-top: 10px;
+    padding-left: 30px;
+
+    > h3{
+        color: white;
+        font-family: "shrikhand";
+        margin-bottom: 25px;
+    }
+
+    > .proposer{
+        display: flex;
+        color: white;
+        margin-top: 8px;
+
+        > h4{
+            margin-left: 15px;
+            
+        }
+    }
+
+    > .partenaire{
+        display: flex;
+        color: white;
+        margin-top: 8px;
+
+        > h4{
+            margin-left: 10px;
+            
+        }
+    }
+
+    > h4{
+        color: white;
+        margin-top: 8px;
+    }
+
+   
+}

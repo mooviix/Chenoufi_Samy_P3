@@ -191,4 +191,36 @@ nav > .choixCase:nth-child(3) > i {
   padding-top: 50px;
 }
 
+footer {
+  background-color: #222222;
+  height: 200px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+footer > h3 {
+  color: white;
+  font-family: "shrikhand";
+  margin-bottom: 25px;
+}
+footer > .proposer {
+  display: flex;
+  color: white;
+  margin-top: 8px;
+}
+footer > .proposer > h4 {
+  margin-left: 15px;
+}
+footer > .partenaire {
+  display: flex;
+  color: white;
+  margin-top: 8px;
+}
+footer > .partenaire > h4 {
+  margin-left: 10px;
+}
+footer > h4 {
+  color: white;
+  margin-top: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */
