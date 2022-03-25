@@ -144,6 +144,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 0 15px;
+    padding: 5px;
 
     > .coeur {
       display: flex;
@@ -153,7 +154,11 @@ nav {
     }
 
     > .text{
-      padding-bottom: 10px;
+      padding-bottom: 5px;
+
+      > h2{
+        margin-bottom: 0px;
+      }
     }
   }
 }
