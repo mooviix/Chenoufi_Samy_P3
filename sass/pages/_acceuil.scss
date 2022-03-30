@@ -3,6 +3,20 @@
 header {
   height: 63px;
   text-align: center;
+  position: relative;
+
+  > a{
+    text-decoration: none;
+    color: black;
+
+    > i{
+      font-size: 20px;
+      position: absolute;
+      left: 30px;
+      top: 28px;
+    }
+  }
+
   > img {
     width: 50%;
     margin-top: 20px;
@@ -15,8 +29,8 @@ header {
   display: flex;
   @include center;
   height: 50px;
-  background-color: var(--colorGrey);
-
+  background-color: var(--colorGrey); 
+  box-shadow: inset 0px 1px 3px grey;
   > i {
     margin-right: 10px;
   }
@@ -74,6 +88,14 @@ nav {
     position: relative;
     box-shadow: 2px 2px 2px var(--colorGrey);
 
+    &:hover{
+      background-color: rgb(230, 191, 230);
+    }
+
+    &:hover > i{
+      color: rgb(78, 18, 78);
+    }
+
     > i {
       padding-right: 20px;
       font-size: 20px;
@@ -91,12 +113,6 @@ nav {
       height: 26px;
       width: 8%;
     }
-
-    &:nth-child(3) {
-      > i {
-        color: var(--colorPrimary);
-      }
-    }
   }
 }
 
@@ -105,7 +121,14 @@ nav {
 .restaurant{
   background-color: var(--colorSilver);
   height: 1250px;
+
+  > a{
+    text-decoration: none;
+    color: black;
+  }
 }
+
+
 
 .case {
   display: flex;
@@ -116,7 +139,7 @@ nav {
   border-radius: 20px;
   box-shadow: 2px 2px 2px var(--colorGrey);
   margin-bottom: 20px;
-
+  
   > .case_img {
     position: relative;
     overflow: hidden;
@@ -145,6 +168,7 @@ nav {
     justify-content: space-between;
     margin: 0 15px;
     padding: 5px;
+    
 
     > .coeur {
       display: flex;

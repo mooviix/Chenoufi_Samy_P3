@@ -1,0 +1,25 @@
+.imgResto{
+    height: 285px;
+    z-index: -1;
+}
+
+section{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    top: -80px;
+    height: 1161px;
+    background-color: white;
+
+    > .titreCoeur{
+        display: flex;
+        justify-content: space-between;
+
+        > .title > h1{
+            font-family: "shrikhand";
+            font-size: 25px;
+            letter-spacing: 1px;        
+        }
+    }
+}
+

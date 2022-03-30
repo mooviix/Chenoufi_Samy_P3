@@ -42,6 +42,17 @@ body {
 header {
   height: 63px;
   text-align: center;
+  position: relative;
+}
+header > a {
+  text-decoration: none;
+  color: black;
+}
+header > a > i {
+  font-size: 20px;
+  position: absolute;
+  left: 30px;
+  top: 28px;
 }
 header > img {
   width: 50%;
@@ -55,6 +66,7 @@ header > img {
   justify-content: center;
   height: 50px;
   background-color: var(--colorGrey);
+  box-shadow: inset 0px 1px 3px grey;
 }
 .localisation > i {
   margin-right: 10px;
@@ -113,6 +125,12 @@ nav > .choixCase {
   position: relative;
   box-shadow: 2px 2px 2px var(--colorGrey);
 }
+nav > .choixCase:hover {
+  background-color: #e6bfe6;
+}
+nav > .choixCase:hover > i {
+  color: #4e124e;
+}
 nav > .choixCase > i {
   padding-right: 20px;
   font-size: 20px;
@@ -130,14 +148,15 @@ nav > .choixCase > div {
   height: 26px;
   width: 8%;
 }
-nav > .choixCase:nth-child(3) > i {
-  color: var(--colorPrimary);
-}
 
 /* restaurant */
 .restaurant {
   background-color: var(--colorSilver);
   height: 1250px;
+}
+.restaurant > a {
+  text-decoration: none;
+  color: black;
 }
 
 .case {
@@ -225,6 +244,38 @@ footer > .partenaire > h4 {
 footer > h4 {
   color: white;
   margin-top: 8px;
+}
+
+.coeur:hover > i {
+  background: linear-gradient(var(--colorSecondary), var(--colorPrimary));
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.imgResto {
+  height: 285px;
+  z-index: -1;
+}
+
+section {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: -80px;
+  height: 1161px;
+  background-color: white;
+}
+section > .titreCoeur {
+  display: flex;
+  justify-content: space-between;
+}
+section > .titreCoeur > .title > h1 {
+  font-family: "shrikhand";
+  font-size: 25px;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

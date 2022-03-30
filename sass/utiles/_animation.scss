@@ -1,0 +1,13 @@
+.coeur{
+    &:hover > i{
+        background: linear-gradient(var(--colorSecondary), var(--colorPrimary));
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+           
+    }
+}
+
+
