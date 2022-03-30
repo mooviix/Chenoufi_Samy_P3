@@ -1,25 +1,50 @@
 .imgResto{
     height: 285px;
-    z-index: -1;
 }
 
-section{
+.block{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     position: relative;
     top: -80px;
     height: 1161px;
     background-color: white;
+    padding: 0px 20px;
 
     > .titreCoeur{
         display: flex;
         justify-content: space-between;
+        margin-right: 18px;
+        
 
         > .title > h1{
             font-family: "shrikhand";
             font-size: 25px;
             letter-spacing: 1px;        
         }
+
+        > .coeur{
+            display: flex;
+            font-size: 30px;
+            align-items: flex-end;
+        }
     }
+
+    > article{
+
+        > .titreMenu{
+            position: relative;
+
+            &::after{
+                content: " ";
+                width: 45px;
+                height: 3px;
+                background-color: var(--colorTertiaire);
+                position: absolute;
+                left: 0px;
+                bottom: -8px;
+            }
+        }  
+    }     
 }
 
