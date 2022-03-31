@@ -113,10 +113,10 @@ nav > .choixCase {
   box-shadow: 2px 2px 2px var(--colorGrey);
 }
 nav > .choixCase:hover {
-  background-color: #e6bfe6;
+  background-color: #f5edff;
 }
 nav > .choixCase:hover > i {
-  color: #4e124e;
+  color: var(--colorPrimary);
 }
 nav > .choixCase > i {
   padding-right: 20px;
@@ -166,7 +166,7 @@ nav > .choixCase > div {
   top: 15px;
   background-color: #99E2D0;
   padding: 5px 10px;
-  color: #17A17F;
+  color: #008766;
   border-radius: 5px;
 }
 .case > .case_img > img {
@@ -202,7 +202,7 @@ nav > .choixCase > div {
 }
 
 footer {
-  background-color: #222222;
+  background-color: #353535;
   height: 200px;
   padding-top: 10px;
   padding-left: 30px;

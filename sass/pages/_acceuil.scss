@@ -76,11 +76,11 @@ nav {
     box-shadow: 2px 2px 2px var(--colorGrey);
 
     &:hover{
-      background-color: rgb(230, 191, 230);
+      background-color: #f5edff;
     }
 
     &:hover > i{
-      color: rgb(78, 18, 78);
+      color: var(--colorPrimary);
     }
 
     > i {
@@ -137,7 +137,7 @@ nav {
       top: 15px;
       background-color: #99E2D0;
       padding: 5px 10px;
-      color: #17A17F;
+      color: #008766;
       border-radius: 5px;
     }
 
