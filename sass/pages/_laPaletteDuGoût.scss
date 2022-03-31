@@ -1,9 +1,12 @@
 .imgResto{
+    width: 100%;
     height: 285px;
+    object-fit: cover;
+    object-position: center;
 }
 
 main{
-    height: 1370px;
+    background-color: var(--colorSilver);
 }
 
 .block{
@@ -11,7 +14,6 @@ main{
     border-top-right-radius: 40px;
     position: relative;
     top: -80px;
-    height: 1160px;
     background-color: var(--colorSilver);
     padding: 0px 20px;
 
@@ -72,6 +74,9 @@ main{
                     margin-top: 10px;
                     font-weight: bold;
                     font-size: 17px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
 
                 > p{

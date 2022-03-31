@@ -232,6 +232,13 @@ footer > h4 {
   color: white;
   margin-top: 8px;
 }
+footer > a {
+  text-decoration: none;
+  color: white;
+}
+footer > a > h4 {
+  margin-top: 8px;
+}
 
 .coeur:hover > i {
   background: linear-gradient(var(--colorSecondary), var(--colorPrimary));
@@ -240,6 +247,8 @@ footer > h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  transition: all 500ms;
+  transform: scale(1.2);
 }
 
 button {
@@ -254,14 +263,22 @@ button {
   color: white;
   font-size: 15px;
   border: none;
+  box-shadow: 3px 5px 10px grey;
+}
+button:hover {
+  filter: brightness(1.2);
+  box-shadow: 3px 5px 15px grey;
 }
 
 .imgResto {
+  width: 100%;
   height: 285px;
+  object-fit: cover;
+  object-position: center;
 }
 
 main {
-  height: 1370px;
+  background-color: var(--colorSilver);
 }
 
 .block {
@@ -269,7 +286,6 @@ main {
   border-top-right-radius: 40px;
   position: relative;
   top: -80px;
-  height: 1160px;
   background-color: var(--colorSilver);
   padding: 0px 20px;
 }
@@ -324,6 +340,9 @@ main {
   margin-top: 10px;
   font-weight: bold;
   font-size: 17px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .block > article > .platMenu > .caseMenu > p {
   white-space: nowrap;
