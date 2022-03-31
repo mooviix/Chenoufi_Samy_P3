@@ -2,13 +2,17 @@
     height: 285px;
 }
 
+main{
+    height: 1370px;
+}
+
 .block{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     position: relative;
     top: -80px;
-    height: 1161px;
-    background-color: white;
+    height: 1160px;
+    background-color: var(--colorSilver);
     padding: 0px 20px;
 
     > .titreCoeur{
@@ -31,6 +35,7 @@
     }
 
     > article{
+        margin-top: 45px;
 
         > .titreMenu{
             position: relative;
@@ -44,7 +49,55 @@
                 left: 0px;
                 bottom: -8px;
             }
-        }  
-    }     
+        } 
+        
+        > .platMenu{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding-left: 10px;
+            padding-right: 24px;
+            border-radius: 20px;
+            margin-top: 15px;
+
+            > .caseMenu{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                width: 85%;
+
+                > h3{
+                    margin-top: 10px;
+                    font-weight: bold;
+                    font-size: 17px;
+                }
+
+                > p{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 14px;
+                }
+            }
+
+            > .prixMenu{
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 12px;
+
+                > h4{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    > button{
+        display: flex;
+        margin: auto;
+        margin-top: 45px;
+    }
 }
 

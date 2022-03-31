@@ -86,19 +86,6 @@ header > img {
   text-align: center;
   margin-bottom: 20px;
 }
-.texteBtn button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(var(--colorSecondary), var(--colorPrimary));
-  border-radius: 35px;
-  width: 60%;
-  height: 50px;
-  color: white;
-  font-size: 15px;
-  border: none;
-}
 
 .choix {
   margin-left: 15px;
@@ -255,8 +242,26 @@ footer > h4 {
   font-weight: 900;
 }
 
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(var(--colorSecondary), var(--colorPrimary));
+  border-radius: 35px;
+  width: 60%;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+
 .imgResto {
   height: 285px;
+}
+
+main {
+  height: 1370px;
 }
 
 .block {
@@ -264,8 +269,8 @@ footer > h4 {
   border-top-right-radius: 40px;
   position: relative;
   top: -80px;
-  height: 1161px;
-  background-color: white;
+  height: 1160px;
+  background-color: var(--colorSilver);
   padding: 0px 20px;
 }
 .block > .titreCoeur {
@@ -283,6 +288,9 @@ footer > h4 {
   font-size: 30px;
   align-items: flex-end;
 }
+.block > article {
+  margin-top: 45px;
+}
 .block > article > .titreMenu {
   position: relative;
 }
@@ -294,6 +302,47 @@ footer > h4 {
   position: absolute;
   left: 0px;
   bottom: -8px;
+}
+.block > article > .platMenu {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 24px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+.block > article > .platMenu > .caseMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 85%;
+}
+.block > article > .platMenu > .caseMenu > h3 {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.block > article > .platMenu > .caseMenu > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+}
+.block > article > .platMenu > .prixMenu {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+.block > article > .platMenu > .prixMenu > h4 {
+  font-weight: bold;
+}
+.block > button {
+  display: flex;
+  margin: auto;
+  margin-top: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
