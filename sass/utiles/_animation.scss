@@ -30,4 +30,57 @@ button {
         filter: brightness(1.2);
         box-shadow: 3px 5px 15px grey;
     }
-  }
+}
+
+.animation{
+    display: flex;
+    width: 0%;
+    background-color: green;
+    transition: all 500ms;
+    @include center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 10px;
+}
+
+
+.confirmation{
+    transform: rotate(180deg);
+    opacity: 0;
+    font-size: 20px;
+}
+
+
+@keyframes valide{
+    0%{
+        transform: rotate(-180deg);
+        opacity: 0;
+        
+    }
+
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+
+@keyframes check{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes appear{
+    0%{
+        transform: scale(0);
+    }
+    
+    100%{
+        transform: scale(1);
+    }
+}

@@ -59,9 +59,25 @@ main{
             justify-content: space-between;
             background-color: white;
             padding-left: 10px;
-            padding-right: 24px;
             border-radius: 20px;
             margin-top: 15px;
+            animation: appear 1s;
+
+            &:hover > .animation > .confirmation {  
+                animation: valide 500ms forwards; 
+                animation-delay: 100ms;
+            }
+            &:hover > .animation {  
+                animation: check 500ms forwards;  
+            }
+
+            @for $i from 1 through 10{
+                &:nth-child(#{$i}){
+                    animation-delay: 100ms * $i;
+                }
+            }
+
+
 
             > .caseMenu{
                 display: flex;
@@ -96,6 +112,7 @@ main{
                     font-weight: bold;
                 }
             }
+
         }
     }
     

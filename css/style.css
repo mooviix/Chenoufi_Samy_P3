@@ -4,34 +4,35 @@
   --colorTertiaire: #99e2d0;
   --colorGrey: #EAEAEA;
   --colorSilver: #F6F6F6;
+  font-family: "roboto";
 }
 
 h1 {
-  font-family: "roboto";
   margin-bottom: 0px;
 }
 
 h2 {
-  font-family: "roboto";
   font-weight: 500;
   font-size: 18px;
 }
 
 h3 {
-  font-family: "roboto";
   font-weight: 300;
   margin-bottom: 0px;
 }
 
 h4 {
-  font-family: "roboto";
   font-weight: 400;
   margin: 0px;
 }
 
 p {
-  font-family: "roboto";
   margin: 0px;
+}
+
+.localisation > span {
+  font-weight: 500;
+  font-size: 18px;
 }
 
 body {
@@ -270,6 +271,50 @@ button:hover {
   box-shadow: 3px 5px 15px grey;
 }
 
+.animation {
+  display: flex;
+  width: 0%;
+  background-color: green;
+  transition: all 500ms;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-left: 10px;
+}
+
+.confirmation {
+  transform: rotate(180deg);
+  opacity: 0;
+  font-size: 20px;
+}
+
+@keyframes valide {
+  0% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes check {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .imgResto {
   width: 100%;
   height: 285px;
@@ -325,9 +370,46 @@ main {
   justify-content: space-between;
   background-color: white;
   padding-left: 10px;
-  padding-right: 24px;
   border-radius: 20px;
   margin-top: 15px;
+  animation: appear 1s;
+}
+.block > article > .platMenu:hover > .animation > .confirmation {
+  animation: valide 500ms forwards;
+  animation-delay: 100ms;
+}
+.block > article > .platMenu:hover > .animation {
+  animation: check 500ms forwards;
+}
+.block > article > .platMenu:nth-child(1) {
+  animation-delay: 100ms;
+}
+.block > article > .platMenu:nth-child(2) {
+  animation-delay: 200ms;
+}
+.block > article > .platMenu:nth-child(3) {
+  animation-delay: 300ms;
+}
+.block > article > .platMenu:nth-child(4) {
+  animation-delay: 400ms;
+}
+.block > article > .platMenu:nth-child(5) {
+  animation-delay: 500ms;
+}
+.block > article > .platMenu:nth-child(6) {
+  animation-delay: 600ms;
+}
+.block > article > .platMenu:nth-child(7) {
+  animation-delay: 700ms;
+}
+.block > article > .platMenu:nth-child(8) {
+  animation-delay: 800ms;
+}
+.block > article > .platMenu:nth-child(9) {
+  animation-delay: 900ms;
+}
+.block > article > .platMenu:nth-child(10) {
+  animation-delay: 1000ms;
 }
 .block > article > .platMenu > .caseMenu {
   display: flex;
