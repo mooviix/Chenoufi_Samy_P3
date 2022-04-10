@@ -309,10 +309,12 @@ button:hover {
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .imgResto {
@@ -373,6 +375,7 @@ main {
   border-radius: 20px;
   margin-top: 15px;
   animation: appear 1s;
+  animation-fill-mode: both;
 }
 .block > article > .platMenu:hover > .animation > .confirmation {
   animation: valide 500ms forwards;
