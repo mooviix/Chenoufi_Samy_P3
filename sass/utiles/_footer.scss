@@ -10,25 +10,27 @@ footer{
         margin-bottom: 25px;
     }
 
-    > .proposer{
-        display: flex;
-        color: white;
-        margin-top: 8px;
+    >a{
+        >.proposer{
+            display: flex;
+            
+            > h4{
+                margin-left: 8px;
+            }
+        }
 
-        > h4{
-            margin-left: 15px;   
+        > .partenaire{
+            display: flex;
+            align-items: center;
+
+            > h4{
+                margin-left: 5px;
+                margin-top: 10px;
+            }
         }
     }
 
-    > .partenaire{
-        display: flex;
-        color: white;
-        margin-top: 8px;
-
-        > h4{
-            margin-left: 10px;   
-        }
-    }
+    
 
     > h4{
         color: white;
