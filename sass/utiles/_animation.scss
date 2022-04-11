@@ -35,7 +35,8 @@ button {
 .animation{
     display: flex;
     width: 0%;
-    background-color: green;
+    background-color: #99e2d0;
+    color: white;
     transition: all 500ms;
     @include center;
     border-top-right-radius: 15px;

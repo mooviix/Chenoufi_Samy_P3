@@ -274,7 +274,8 @@ button:hover {
 .animation {
   display: flex;
   width: 0%;
-  background-color: green;
+  background-color: #99e2d0;
+  color: white;
   transition: all 500ms;
   align-items: center;
   justify-content: center;
@@ -420,6 +421,9 @@ main {
   justify-content: space-between;
   margin-bottom: 15px;
   width: 85%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .block > article > .platMenu > .caseMenu > h3 {
   margin-top: 10px;
@@ -439,6 +443,7 @@ main {
   display: flex;
   align-items: flex-end;
   margin-bottom: 12px;
+  margin-left: 8px;
 }
 .block > article > .platMenu > .prixMenu > h4 {
   font-weight: bold;
