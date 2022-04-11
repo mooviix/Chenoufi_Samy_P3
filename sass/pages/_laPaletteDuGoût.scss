@@ -65,11 +65,10 @@ main{
             animation-fill-mode: both;
 
             &:hover > .animation > .confirmation {  
-                animation: valide 500ms forwards; 
-                animation-delay: 100ms;
+                animation: valide 1500ms forwards; 
             }
             &:hover > .animation {  
-                animation: check 500ms forwards;  
+                animation: check 2000ms forwards;  
             }
 
             @for $i from 1 through 10{

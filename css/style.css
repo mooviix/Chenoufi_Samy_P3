@@ -417,11 +417,10 @@ main {
   animation-fill-mode: both;
 }
 .block > article > .platMenu:hover > .animation > .confirmation {
-  animation: valide 500ms forwards;
-  animation-delay: 100ms;
+  animation: valide 1500ms forwards;
 }
 .block > article > .platMenu:hover > .animation {
-  animation: check 500ms forwards;
+  animation: check 2000ms forwards;
 }
 .block > article > .platMenu:nth-child(1) {
   animation-delay: 100ms;
@@ -490,6 +489,15 @@ main {
   display: flex;
   margin: auto;
   margin-top: 45px;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    box-shadow: 0px 0px 10px grey;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
