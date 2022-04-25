@@ -67,7 +67,7 @@ header > img {
   justify-content: center;
   height: 50px;
   background-color: var(--colorGrey);
-  box-shadow: inset 0px 1px 3px grey;
+  box-shadow: inset 0px 2px 3px grey;
 }
 .localisation > i {
   margin-right: 10px;
@@ -89,9 +89,11 @@ header > img {
 }
 
 .choix {
-  margin-left: 15px;
-  margin-top: 54px;
-  font-size: 24px;
+  padding-left: 15px;
+  padding-top: 54px;
+  padding-bottom: 50px;
+  font-size: 12px;
+  background-color: white;
 }
 
 nav {
